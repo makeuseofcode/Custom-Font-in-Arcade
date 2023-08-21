@@ -21,7 +21,7 @@ class MyGame(arcade.Window):
         arcade.draw_circle_filled(self.player_x, self.player_y, 30, BLUE)
         
         # Load the custom font in the __init__ method of MyGame class
-        self.custom_font = arcade.load_font("custom_font.ttf", 24)
+        self.custom_font = arcade.load_font("custom_font.ttf")
         text = "Custom Font!"
         # Inside the on_draw method, draw text using the custom font
         arcade.draw_text(text, 250, 250, BLACK, font_name=self.custom_font)
